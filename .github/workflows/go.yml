@@ -9,7 +9,10 @@ on:
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: 
+    - self-hosted-ghrtest-custom 
+    - size-l-x64
+    - profile-cache
     steps:
       - uses: actions/checkout@v4
       - name: Set up Go
