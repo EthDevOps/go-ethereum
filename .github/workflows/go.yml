@@ -11,7 +11,7 @@ jobs:
   build:
     runs-on: 
     - self-hosted-ghrtest-custom 
-    - size-l-x64
+    - size-xl-x64
     - profile-cache
     steps:
       - uses: actions/checkout@v4
